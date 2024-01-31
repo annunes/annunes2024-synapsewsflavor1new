@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "annunes2024-synapsewsflavor1new"
+		},
+		"annunes2024-synapsewsflavor1new-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:annunes2024-synapsewsflavor1new.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"annunes2024-synapsewsflavor1new-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://annunes2024adlsg24fl3new.dfs.core.windows.net"
+		}
+	}
+}
